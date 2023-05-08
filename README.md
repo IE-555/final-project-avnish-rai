@@ -4,6 +4,7 @@ Authors: Aditya Vikram Bagaria (50479384) – abagaria@buffalo.edu, Avnish Suren
 ________________________________________
 
 #Task List
+
 | ID | Task Description | Due Date | Status |
 | --- | --- | --- | --- |
 | 1 | Search APIs for online dynamic data | 2023-04-28 | DONE |
@@ -29,12 +30,15 @@ ________________________________________
 ________________________________________
 
 #Introduction
+
 The purpose of this project is to analyze and visualize air quality data for select cities and identifying the parameters that are most strongly correlated to AQI for each city.
+
 What type of data are we using?
 Air Quality Data for select cities are used for this project. Information on – 
 1.	Air Quality Index 
 2.	Hourly concentrations of air pollutants, including carbon monoxide, nitrogen dioxide, sulphur dioxide, and ozone 
 3.	Geographical coordinates for each city
+
 What are we doing with this data?
 With this data, we are:
 1.	Retrieving the current AQI for each city creating a bar chart of the AQI values.
@@ -48,7 +52,6 @@ With this data, we are:
 9.	Identifying which parameters are most strongly correlated with AQI for each city.
 
 What types of analysis you're conducting?
-
 1.	Descriptive analysis - We are using descriptive statistics, to summarize the air quality data for each city.
 2.	Comparative analysis - We are comparing air quality data across multiple cities to identify differences and similarities in air quality trends and correlations.
 3.	Correlation analysis - We are calculating the correlation between each air quality parameter and AQI for each city to examine the relationship between these variables.
@@ -58,13 +61,15 @@ What types of analysis you're conducting?
 ________________________________________
 
 #References
-•	Source code was adapted here 
+
+•	Source code was adapted here - https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFVVenMyaWhNcWJqWVZ2OWZNOXQzSEgyaEJzQXxBQ3Jtc0ttcWZwOUNCUFlxQm1BNi1hT3N1dEJhSWpDWkozSWV1ck0wV2p3aTNpU2tqbGJkaFN5VXRfUzF2emZiOTlEVUtUM05zOE8wYWVtRGo5TnlnR3U2T0pBaW1hWG8tYTloVDZkLUVOMlpGVFQ2eVZvNGI2VQ&q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1RCOkeSOWUKv-89h-wBuBc3SFajVs6DCP&v=PVW79cb6ZWo 
 •	The code retrieves data from 
 -	https://open-meteo.com/en
 -	https://aqicn.org/api/
 ________________________________________
 
 #Requirements
+
 Python packages and libraries used: requests, pandas, matplotlib.pyplot and seaborn
 •	APIs: 
 -	http://api.waqi.info/feed/sydney/?token=504cf1362a47fda9e822768d19af839b22fee4ab
@@ -73,4 +78,5 @@ Python packages and libraries used: requests, pandas, matplotlib.pyplot and seab
 ________________________________________
 
 #Motivation
+
 The main purpose behind this project is to raise awareness about air quality issues in select cities around the world. The project will use visualization tools to demonstrate the severity of air pollution in different parts of the world and attention to the need for air quality management and public health interventions.
