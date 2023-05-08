@@ -1,39 +1,74 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6ebMFVGY)
-  
--Team Members:
-1. Avnish Surendra Rai (50488246), avnishsu@buffalo.edu 
-2. Aditya Vikram Bagaria (50479384), abagaria@buffalo.edu
-3. Ayushi Porwal (50442208), ayushipo@buffalo.edu 
+Comparative Analysis of Air Quality in Major Cities
+Authors: Aditya Vikram Bagaria (50479384) – abagaria@buffalo.edu, Avnish Surendra Rai (50488246) – avnishsu@buffalo.edu
+________________________________________
 
+Task List
+ID	Task Description	Due Date	Status
+1	Search APIs for online dynamic data	2023-04-28	DONE
+2	Generate API key	2023-04-28	DONE
+3	Prepare Project Proposal	2023-05-08	DONE
+4	Retrieve the current AQI for each city	2023-05-05	DONE
+5	Create a bar chart of the AQI values	2023-05-05	DONE
+6	Retrieve the latitude and longitude for each city	2023-05-05	DONE
+7	Plot the locations of the cities on a map using the Cartopy library	2023-05-06	DONE
+8	Retrieve hourly air quality data for each city	2023-05-06	DONE
+9	Create a time series plot of the AQI values for each city	2023-05-07	DONE
+10	Create a correlation matrix plot for air quality parameter and AQI for each city	2023-05-07	DONE
+11	Create a table of the time of the day with the highest and lowest AQI for each city	2023-05-08	DONE
+12	Update this table with detailed list of tasks	2023-05-08	DONE
+13	Create a pie chart for each city showing the distribution of air parameters to find the most prevalent parameter for each city.	2023-05-09	WIP
+14	Create box plots for each city showing the distribution of AQI values over time	2023-05-10	WIP
+15	Create a heat map for each city showing the AQI values over time	2023-05-12	WIP
+16	Identifying which parameters are most strongly correlated with AQI	2023-05-13	WIP
+17	Prepare the presentation and the report	2023-05-15	TBD
+18	Complete YouTube video and upload to YouTube	2023-05-16	TBD
+19	Upload README.md document to Github	2023-05-17	TBD
 
-## Data-driven Approach for Surface Roughness Quality Prediction in Manufacturing Processes (Turing Process).
-IE 555: Programming for Analytics 
+________________________________________
 
-Project Proposal Project Title: Data-driven Approach for Surface Roughness Quality Prediction in Manufacturing Processes (Turing Process).
-Motivation: The motivation behind this project is to improve the quality of manufactured products by accurately predicting the surface roughness quality in the Turing process. Surface roughness is an important quality factor in manufacturing processes as it affects the functionality, performance, and durability of the products. Traditional methods for predicting surface roughness quality are time-consuming, expensive, and may not be accurate. Therefore, there is a need for a data-driven approach that can accurately predict surface roughness quality in a cost-effective and efficient manner. By developing such an approach, the manufacturing industry can save time and resources while ensuring high-quality products.
-Data source: Collecting the data from the actual turning process performed in the workshop at SIT college in India.
-Analysis Plan: 
-Data Collection and Preprocessing:
-The first step is to collect the relevant data from various sources such as banks, credit bureaus, and other financial institutions. This data typically includes basic bank details such as income, employment status, age, credit history, loan amount, and other credit-related information. Once the data is collected, it needs to be preprocessed by cleaning, handling missing values, and converting categorical data into numerical data for analysis.
-Exploratory Data Analysis:
-Exploratory Data Analysis (EDA) is performed to gain insights into the data using data visualization, statistical analysis, and pattern identification using correlation techniques. This step involves visualizing the data, identifying outliers, checking for skewness, and understanding the distribution of the data.
-Feature Selection:
-Feature selection involves selecting the most relevant features for the model. In this step, various techniques are used to identify the most important features such as classification techniques like Random Forest, Decision tree, or k-nearest neighbors, and recursive feature elimination.
-Model Training:
-Once the most relevant features are selected, the appropriate machine learning algorithms for classification, such as Random Forest, Decision tree, or k-nearest neighbors, are trained using the preprocessed data. This step involves splitting the data into training and testing sets and training the model on the training set.
+Introduction
+The purpose of this project is to analyze and visualize air quality data for select cities and identifying the parameters that are most strongly correlated to AQI for each city.
+What type of data are we using?
+Air Quality Data for select cities are used for this project. Information on – 
+1.	Air Quality Index 
+2.	Hourly concentrations of air pollutants, including carbon monoxide, nitrogen dioxide, sulphur dioxide, and ozone 
+3.	Geographical coordinates for each city
+What are we doing with this data?
+With this data, we are:
+1.	Retrieving the current AQI for each city creating a bar chart of the AQI values.
+2.	Retrieving the latitude and longitude for each city and plotting the locations of the cities on a map. 
+3.	Retrieving hourly air quality data for each city and creating a time series plot of the AQI values for each city.
+4.	Calculating the correlation between each air quality parameter and AQI for each city and creating a correlation matrix plot for each city.
+5.	Creating a table of the time of day with the highest and lowest AQI for each city.
+6.	Create a pie chart for each city showing the distribution of air parameters to find the most prevalent parameter for each city.
+7.	Create box plots for each city showing the distribution of AQI values over time.
+8.	Create a heat map for each city showing the AQI values over time.
+9.	Identifying which parameters are most strongly correlated with AQI for each city.
 
+What types of analysis you're conducting?
 
-Model Evaluation:
-After training the model, its performance is evaluated using metrics such as accuracy, precision, recall, and F1 score to assess its effectiveness in predicting creditworthiness. This step involves testing the model on the testing set and comparing its performance to other models.
-Comparison of Models:
-In this step, the different models are compared with respect to evaluation metrics and the best model is selected for this preprocessed dataset. This step helps to identify the most effective machine learning algorithm for predicting creditworthiness.
-Model Deployment:
-Once the best model is selected, it is deployed in a production environment for the automatic classification of individuals based on creditworthiness. The system is designed to be scalable and flexible for future updates and changes to the data or model. This step involves integrating the model into an existing system or developing a new system for this purpose.
+1.	Descriptive analysis - We are using descriptive statistics, to summarize the air quality data for each city.
+2.	Comparative analysis - We are comparing air quality data across multiple cities to identify differences and similarities in air quality trends and correlations.
+3.	Correlation analysis - We are calculating the correlation between each air quality parameter and AQI for each city to examine the relationship between these variables.
+4.	Time series analysis - We are using time series plots to examine air quality trends over time, including hourly changes in AQI values for each city.
+5.	Spatial analysis - We are using maps to visualize the geographic distribution of air quality data across different cities.
 
-The objective of the proposed project is to develop a data-driven approach for predicting surface roughness quality in manufacturing processes, specifically the Turing process. This will involve collecting and preprocessing data from the actual Turing process performed in the workshop at SIT college in India, performing exploratory data analysis to gain insights into the data, selecting the most relevant features using various techniques, training machine learning algorithms for classification, evaluating model performance using metrics such as accuracy, precision, recall, and F1 score, comparing different models, and deploying the best model in a production environment for automatic classification of surface roughness quality.
+________________________________________
 
- 
+References
+•	Source code was adapted here 
+•	The code retrieves data from 
+-	https://open-meteo.com/en
+-	https://aqicn.org/api/
+________________________________________
 
+Requirements
+Python packages and libraries used: requests, pandas, matplotlib.pyplot and seaborn
+•	APIs: 
+-	http://api.waqi.info/feed/sydney/?token=504cf1362a47fda9e822768d19af839b22fee4ab
+-	https://air-quality-api.open-meteo.com/v1/air-quality?latitude=51.5074&longitude=-0.1278&hourly=carbon_monoxide,nitrogen_dioxide,sulphur_dioxide,ozone,us_aqi
+•	API key: 504cf1362a47fda9e822768d19af839b22fee4ab
+________________________________________
 
-
-
+Motivation
+The main purpose behind this project is to raise awareness about air quality issues in select cities around the world. The project will use visualization tools to demonstrate the severity of air pollution in different parts of the world and attention to the need for air quality management and public health interventions.
