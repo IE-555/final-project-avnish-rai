@@ -1,8 +1,9 @@
-Comparative Analysis of Air Quality in Major Cities
+#Comparative Analysis of Air Quality in Major Cities
+
 Authors: Aditya Vikram Bagaria (50479384) – abagaria@buffalo.edu, Avnish Surendra Rai (50488246) – avnishsu@buffalo.edu
 ________________________________________
 
-Task List
+#Task List
 | ID | Task Description | Due Date | Status |
 | --- | --- | --- | --- |
 | 1 | Search APIs for online dynamic data | 2023-04-28 | DONE |
@@ -27,7 +28,7 @@ Task List
 
 ________________________________________
 
-Introduction
+#Introduction
 The purpose of this project is to analyze and visualize air quality data for select cities and identifying the parameters that are most strongly correlated to AQI for each city.
 What type of data are we using?
 Air Quality Data for select cities are used for this project. Information on – 
@@ -56,14 +57,14 @@ What types of analysis you're conducting?
 
 ________________________________________
 
-References
+#References
 •	Source code was adapted here 
 •	The code retrieves data from 
 -	https://open-meteo.com/en
 -	https://aqicn.org/api/
 ________________________________________
 
-Requirements
+#Requirements
 Python packages and libraries used: requests, pandas, matplotlib.pyplot and seaborn
 •	APIs: 
 -	http://api.waqi.info/feed/sydney/?token=504cf1362a47fda9e822768d19af839b22fee4ab
@@ -71,5 +72,5 @@ Python packages and libraries used: requests, pandas, matplotlib.pyplot and seab
 •	API key: 504cf1362a47fda9e822768d19af839b22fee4ab
 ________________________________________
 
-Motivation
+#Motivation
 The main purpose behind this project is to raise awareness about air quality issues in select cities around the world. The project will use visualization tools to demonstrate the severity of air pollution in different parts of the world and attention to the need for air quality management and public health interventions.
