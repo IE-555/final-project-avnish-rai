@@ -135,8 +135,10 @@ plt.xlabel('City')
 plt.ylabel('AQI')
 plt.savefig('AQI bar chart.png')
 plt.show()
+
 Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/54758e41-9dcf-4435-a20f-372bf128ee78)
+
+![AQI bar chart](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/a66504ef-f095-4ca4-bdb5-6fd964e0e602)
 
 
 5.	We then visualize the live data by plotting the locations and the respective AQIs on the world map. We save this plot as ‘AQI plot.png’:
@@ -160,8 +162,11 @@ for city in cities:
 plt.title('Air Quality Index for Selected Cities')
 plt.savefig('AQI map.png')
 plt.show()
+
 Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/8b3481e0-6292-4430-ba5e-a899a0018d26)
+
+![AQI map](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/5fdf499a-60b4-471d-b4cf-e9e920e9f53b)
+
 
 6.	We then proceed to gather the historical data and retrieve the data for each city:
 # Define the API URLs and parameters for the five cities
@@ -203,8 +208,11 @@ ax.set_ylabel('AQI')
 ax.legend()
 plt.savefig('AQI comparison.png')
 plt.show()
+
 Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/1cc7e1d7-f3b2-4951-a28f-84e67180fcd4)
+
+![AQI comparison](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/554f3506-8706-467f-a3d9-dedd9dca34b9)
+
 
 8.	We then proceed to visualize the correlation between different parameters and the aqi, for individual city by plotting a heat map of the correlation. We save our plots as a ‘{city}_correlation_matrix.png’:
 # Calculate the correlation between each air quality parameter and AQI for each city
@@ -222,12 +230,13 @@ for city in cities.keys():
     plt.show()
  
  Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/ba5771d9-5406-4d42-9111-e4fed7cbef3d)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/0d013162-3b08-40f8-91eb-784fd9c83d90)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/2fd7b377-24b1-4f2e-9fd6-999209e4bd72)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/267ae8c0-ec28-423f-bb06-9dcd825531af)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/2fa407f2-709f-47d9-8fae-2fe7f6412c06)
- 
+
+![Sydney_correlation_matrix](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/ab0bb8c3-975e-427c-8d13-826da2db9c3f)
+![Mumbai_correlation_matrix](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/158e684b-b801-4720-8e63-a9fe919010a9)
+![New York_correlation_matrix](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/4de99894-67fa-464a-bf28-97663999f0de)
+![London_correlation_matrix](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/c6631ab9-38b9-44c2-8638-7afa6f2e0ec0)
+![Beijing_correlation_matrix](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/d822bf91-b024-45f0-878f-af59de07f0cc)
+
 9.	We then generate a table to show the time of the day with the highest and the lowest AQI, for each city. 
 # Create a table of the time of the day with the highest and lowest AQI for each city
 table_data = []
@@ -241,7 +250,9 @@ for city in cities.keys():
 
 table = pd.DataFrame(table_data, columns=['City', 'Time', 'Max AQI', 'Time', 'Min AQI'])
 print(table)
+
 Output:
+
 ![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/6935fceb-dd59-4085-a30f-853f3b93b27b)
 
 10.	We then proceed to create a box plot for each city to study AQI distribution over time. We save our plots as '{city}_AQI box plot.png’:
@@ -254,12 +265,14 @@ for city in cities.keys():
     plt.ylabel('AQI')
     plt.savefig(f'{city}_AQI box plot.png')
     plt.show()
- Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/144967c4-8499-4f64-bbe1-1e11c5ae8c90)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/b50f8c43-f05e-40ca-8ac6-dd40e7755491)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/2e81cb15-3df0-4474-9b5b-668b5fbc0fe4)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/827a9b02-62a7-4ebf-969d-5615756fbb5a)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/67c427bd-d12c-4dab-a8c5-dec7097dd4d0)
+
+Output:
+
+![New York_AQI box plot](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/3e8bc1f8-57ee-4575-8fe0-13b0ae13ee3d)
+![Sydney_AQI box plot](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/1c64e56c-394a-4dcd-ace5-1bba374acaea)
+![Mumbai_AQI box plot](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/fba46e5a-94a5-4ff2-843f-a330783ec0bf)
+![London_AQI box plot](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/9dac39a5-ea30-4f58-9fb0-d55854c98fd3)
+![Beijing_AQI box plot](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/75400dff-bfe3-4dd3-9ab9-e1224a1523ca)
  
 11.	We then generate the heat map to compare AQI data for each city in the last 24 hours. We save the plot as 'AQI heatmap.png’:
 # Create a DataFrame to hold the hourly AQI values for each city
@@ -277,8 +290,10 @@ plt.xlabel('City')
 plt.ylabel('Hour of the Day')
 plt.savefig('AQI heatmap.png')
 plt.show()
+
 Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/08e3d425-33b0-4076-a613-43f21efda58b)
+
+![AQI heatmap](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/2885b2d6-3fbf-409a-8e6d-299feaf6c917)
 
 12.	Finally, we generate a pie chart plot for each city to view the individual parameters and their percentage in the air for that city. We save our plots as '{city}_AQI parameters.png’:
 # Make pie chart for Air Quality Parameters for each city
@@ -289,9 +304,12 @@ for city in cities.keys():
     plt.pie(data, labels=parameters, autopct='%1.1f%%')
     plt.title(f'Average Air Quality Parameters\nfor {city}')
     plt.savefig(f'{city}_AQI parameters.png')
+
 Output:
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/e4a6dc95-e645-481f-8fc1-3e46cd1c2f6e)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/c2154ee9-4abd-41af-a656-42e12eeee4a3)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/6ae0713b-d9e9-4425-b98a-2480fb924b9a)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/68bfafac-5dea-49fb-ad22-cd13b010b348)
-![image](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/0a6c0d53-60c3-42f5-b9b3-f9d85469577e)
+
+![Sydney_AQI parameters](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/a1364984-051b-4087-8ea5-9d7a6368f43a)
+![Beijing_AQI parameters](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/8ce78769-cd46-4368-accc-9aeebfafbbc3)
+![Mumbai_AQI parameters](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/e2523aa1-335d-46c5-b793-8ceb94b4b4f4)
+![New York_AQI parameters](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/a2609da1-f4b3-4d5c-a617-4f02fb0bc412)
+![London_AQI parameters](https://github.com/IE-555/final-project-avnish-rai/assets/124153815/ed3b7e07-695f-4e3d-b866-ec8cb424a644)
+
